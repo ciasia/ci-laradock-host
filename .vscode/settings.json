@@ -2,5 +2,8 @@
     "files.associations": {
         ".env.example": "dotenv",
         "Dockerfile-*": "dockerfile"
-    }
+    },
+    "cSpell.words": [
+        "Laradock"
+    ]
 }
