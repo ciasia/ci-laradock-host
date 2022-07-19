@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Update the laradock submodule
-git submodule update --remote || git submodule update --init;
+git pull upstream master
 
 # Copy the env example
 cp .env ../.laradock.env.bak || true;

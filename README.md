@@ -21,12 +21,12 @@ A customised version of Laradock for hosting Ci Projects
   - [`docker-kill.sh`](#docker-killsh)
   - [`docker-cleanup.sh`](#docker-cleanupsh)
   - [`docker-rebuild.sh`](#docker-rebuildsh)
-  - [`sync.sh`](#syncsh)
   - [`update-laradock.sh`](#update-laradocksh)
 
 <!-- tocstop -->
 
 &nbsp;
+
 
 
 
@@ -58,37 +58,66 @@ Click ` Enable `.
 
 ### `docker-up.sh`
 
+Run up the docker server.
+
+&nbsp;
+
 
   
   
 ### `docker-console.sh`
+
+Connect to the docker server in bash
+
+This will open the public root as the current working directory, so to access laravel artisan
+you will need to open the appropriate folder, i.e. `cd ciportal-laravel-api`.
+
+&nbsp;
 
 
   
   
 ### `docker-kill.sh`
 
+Suspends the servers. Doesn't remove the VMs, just puts them to sleep.  
+Use `docker-compose down` to remove them entirely.
+
+&nbsp;
+
 
   
   
 ### `docker-cleanup.sh`
+
+Provides options for pruning all stored Docker VM images, or just those not currently in use
+by a VM.
+
+&nbsp;
 
 
   
   
 ### `docker-rebuild.sh`
 
+Kills the containers and then builds them again.
 
-  
-  
-### `sync.sh`
-
+&nbsp;
 
   
   
 ### `update-laradock.sh`
 
+Updates Laradock from the main Laradock repo on Github.
 
+You will need to set an upstream git endpoint for this to work, make sure this is in your git config:
+
+```gitconfig
+[remote "upstream"]
+  url = git@github.com:laradock/laradock.git
+  fetch = refs/heads/master
+```
+
+&nbsp;
 
   
   
