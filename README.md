@@ -28,9 +28,7 @@ A customised version of Laradock for hosting Ci Projects
 <!-- tocstop -->
 
 &nbsp;
-&nbsp;
 
-&nbsp;
 &nbsp;
 
 
@@ -52,7 +50,7 @@ Allow invalid certificates for resources loaded from localhost
 Click ` Enable `.
   
 &nbsp;
-&nbsp;
+
 &nbsp;
 
 
