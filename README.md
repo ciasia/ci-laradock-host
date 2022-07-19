@@ -5,7 +5,8 @@ A customised version of Laradock for hosting Ci Projects
 
 &nbsp;
 
-&nbsp;
+
+
 
 ## Table of Contents <!-- omit in toc -->
 
@@ -27,7 +28,7 @@ A customised version of Laradock for hosting Ci Projects
 
 &nbsp;
 
-&nbsp;
+
 
 
 ## Getting Set Up
@@ -49,7 +50,8 @@ Click ` Enable `.
   
 &nbsp;
 
-&nbsp;
+
+
 
 
 ## Helpful Scripts
