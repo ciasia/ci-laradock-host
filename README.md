@@ -4,9 +4,7 @@
 A customised version of Laradock for hosting Ci Projects
 
 &nbsp;
-&nbsp;
 
-&nbsp;
 &nbsp;
 
 ## Table of Contents <!-- omit in toc -->
