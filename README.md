@@ -21,9 +21,9 @@ A customised version of Laradock for hosting Ci Projects
   - [`update-laradock.sh`](#update-laradocksh)
 
 <!-- tocstop -->
-
-
-
+  
+  
+  
 
 
 ## Getting Set Up
@@ -42,9 +42,9 @@ You should see highlighted text saying:
 Allow invalid certificates for resources loaded from localhost
 
 Click ` Enable `.
-
-
-
+  
+  
+  
 
 
 ## Helpful Scripts
@@ -52,35 +52,36 @@ Click ` Enable `.
 ### `docker-up.sh`
 
 
-
-
+  
+  
 ### `docker-console.sh`
 
 
-
-
+  
+  
 ### `docker-kill.sh`
 
 
-
-
+  
+  
 ### `docker-cleanup.sh`
 
 
-
-
+  
+  
 ### `docker-rebuild.sh`
 
 
-
-
+  
+  
 ### `sync.sh`
 
 
-
-
+  
+  
 ### `update-laradock.sh`
 
 
 
-
+  
+  
