@@ -21,9 +21,10 @@ A customised version of Laradock for hosting Ci Projects
   - [`update-laradock.sh`](#update-laradocksh)
 
 <!-- tocstop -->
-  
-  
-  
+    
+&nbsp;
+&nbsp;
+&nbsp;
 
 
 ## Getting Set Up
@@ -43,8 +44,9 @@ Allow invalid certificates for resources loaded from localhost
 
 Click ` Enable `.
   
-  
-  
+&nbsp;
+&nbsp;
+&nbsp;
 
 
 ## Helpful Scripts
