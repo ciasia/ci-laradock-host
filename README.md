@@ -109,13 +109,23 @@ Kills the containers and then builds them again.
 
 Updates Laradock from the main Laradock repo on Github.
 
-You will need to set an upstream git endpoint for this to work, make sure this is in your git config:
+You will need to set an upstream git endpoint for this to work, make sure this is in your git config.
+
+<details><summary>Configuring Upstream</summary>
+
+command:
+
+```bash
+git remote add upstream git@github.com:laradock/laradock.git
+```
 
 ```gitconfig
 [remote "upstream"]
   url = git@github.com:laradock/laradock.git
   fetch = refs/heads/master
 ```
+
+</details>
 
 &nbsp;
 
