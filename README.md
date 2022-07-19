@@ -1,7 +1,7 @@
 
 # Ci Laradock Host <!-- omit in toc -->
 
-A customised version of Laradock for hosting Ci Projects
+A customised version of Laradock for hosting Ci Projects, using Laradock's badly documented multi-site functionality
 
 &nbsp;
 
@@ -14,6 +14,7 @@ A customised version of Laradock for hosting Ci Projects
 <!-- toc -->
 
 - [Getting Set Up](#getting-set-up)
+  - [Setting up your Project Folders](#setting-up-your-project-folders)
   - [Testing over HTTPS](#testing-over-https)
 - [Helpful Scripts](#helpful-scripts)
   - [`docker-up.sh`](#docker-upsh)
@@ -32,6 +33,75 @@ A customised version of Laradock for hosting Ci Projects
 
 
 ## Getting Set Up
+
+
+### Setting up your Project Folders
+
+**Warning:**
+
+Laradock/nginx will expose anything in the parent folder of the laradock project to the VM.
+
+For this reason it is recommended to set up a specific "laradock projects" folder for only projects you wish to host over laradock.
+
+Currently in the nginx config, the default site serves out of the `public` folder.
+
+**Recommended Folder Structure:**
+
+```markdown
+
+[~/projects/laradock-projects]
+ │
+ ├── ci-laradock-host
+ │   │
+ │   ├── [...lots of laradock folders..]
+ │   │
+ │   ├── nginx
+ │   │   │
+ │   │   ├── sites
+ │   │   │   │
+ │   │   │   ├── default.conf
+ │   │   │   ├── ciportal.conf
+ │   │   │   ├── some-other-project.conf
+ │   │   │   └── index.html
+ │   │   │
+ │   │   └── index.html
+ │   │
+ │   │
+ │   ├── public
+ │   │   │
+ │   │   └── index.html
+ │   │
+ │   ├── docker-up.sh
+ │   ├── docker-kill.sh
+ │   ├── .env.example
+ │   ├── .env.example
+ │   └── .env
+ │
+ ├── ciportal-laravel-api
+ │   │
+ │   ├── public
+ │   │   │
+ │   │   ├── css
+ │   │   ├── fonts
+ │   │   ├── js
+ │   │   └── index.php
+ │   │
+ │   ├── app
+ │   ├── config
+ │   ├── database
+ │   ├── .env.example
+ │   └── .env
+ │
+ └── some-other-project
+     │
+     ├── public
+     │   ├── [...folders]
+     │   └── index.php
+     ├── app
+     ├── config
+     └── .env
+
+```
 
 ### Testing over HTTPS
 
@@ -113,11 +183,16 @@ You will need to set an upstream git endpoint for this to work, make sure this i
 
 <details><summary>Configuring Upstream</summary>
 
-command:
+&nbsp;
+
+**Command:**
 
 ```bash
 git remote add upstream git@github.com:laradock/laradock.git
 ```
+
+**Config:**
+
 
 ```gitconfig
 [remote "upstream"]
