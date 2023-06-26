@@ -23,6 +23,7 @@ A customised version of Laradock for hosting Ci Projects, using Laradock's badly
   - [`docker-cleanup.sh`](#docker-cleanupsh)
   - [`docker-rebuild.sh`](#docker-rebuildsh)
   - [`update-laradock.sh`](#update-laradocksh)
+- [Notes and known issues](#notes-and-known-issues)
 
 <!-- tocstop -->
 
@@ -201,6 +202,10 @@ git remote add upstream git@github.com:laradock/laradock.git
 ```
 
 </details>
+
+## Notes and known issues
+
+ - 26/6/23 replaced WORKSPACE_NODE_VERSION=node with WORKSPACE_NODE_VERSION=v19.0.0 to fix a build failure issue with the error "target '/home/laradock/.node-bin' is not a directory"
 
 &nbsp;
 
