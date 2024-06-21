@@ -18,6 +18,8 @@
 
 CREATE USER 'homestead'@'%' IDENTIFIED WITH mysql_native_password BY 'secret';
 
+SET GLOBAL log_bin_trust_function_creators = 1;
+
 CREATE DATABASE IF NOT EXISTS `homestead` COLLATE 'utf8_general_ci' ;
 GRANT ALL ON `homestead`.* TO 'default'@'%' ;
 GRANT ALL ON `homestead`.* TO 'homestead'@'%' ;
